@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易經卜卦</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>易經卜卦</h1>
+        <div id="main-content">
+            <div id="hexagram-section">
+                <div id="hexagram-display">
+                    <div id="original-hexagram" class="hexagram">
+                        <div class="yao-container" data-yao="6"><div class="yao"></div><div class="change-dot"></div></div>
+                        <div class="yao-container" data-yao="5"><div class="yao"></div><div class="change-dot"></div></div>
+                        <div class="yao-container" data-yao="4"><div class="yao"></div><div class="change-dot"></div></div>
+                        <div class="yao-container" data-yao="3"><div class="yao"></div><div class="change-dot"></div></div>
+                        <div class="yao-container" data-yao="2"><div class="yao"></div><div class="change-dot"></div></div>
+                        <div class="yao-container" data-yao="1"><div class="yao"></div><div class="change-dot"></div></div>
+                    </div>
+                    <div id="arrow">→</div>
+                    <div id="changed-hexagram" class="hexagram"></div>
+                </div>
+                <div id="hexagram-controls">
+                    <button id="castAllButton">卜整卦</button>
+                    <button id="resetButton">重置</button>
+                </div>
+            </div>
+            <div id="controls-section">
+                <h2>單爻卜卦</h2>
+                <div id="controls">
+                    <button class="yao-button" data-yao="6">第一爻</button>
+                    <button class="yao-button" data-yao="5">第二爻</button>
+                    <button class="yao-button" data-yao="4">第三爻</button>
+                    <button class="yao-button" data-yao="3">第四爻</button>
+                    <button class="yao-button" data-yao="2">第五爻</button>
+                    <button class="yao-button" data-yao="1">第六爻</button>
+                </div>
+            </div>
+        </div>
+        <div id="interpretation-section">
+            <h2>卦象解釋</h2>
+            <div id="original-interpretation"></div>
+            <div id="changed-interpretation"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
